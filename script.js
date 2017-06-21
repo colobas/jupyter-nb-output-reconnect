@@ -16,8 +16,9 @@
 var buffer = "";
 
 function addToCell(temp_cell, str){
-	//TODO addicional logic rather than just replacing the content of the cell
+	//TODO additional logic rather than just replacing the content of the cell
 	buffer = str.replace(/.?\x08/g, "");
+	console.log(buffer);
 
 	temp_cell.innerHTML = '<div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide" style=""></div><div class="output" style=""><div class="output_area"><div class="prompt"></div><div class="output_subarea output_text output_stream output_stdout"><pre>'+ buffer  +'</pre></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div>'
 }
