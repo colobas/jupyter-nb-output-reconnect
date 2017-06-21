@@ -5,3 +5,9 @@
 - As it is now, the output of that cell is replaced with every `print` command on the running script, which is nice for progress bars, for instance, but not so nice if you want to print several lines, as only the last one will persist. However, the output is also logged on the Developer Console, so you can also check it there
 - The browser extension icon simply toggles the extension on a per tab basis.
 - This is experimental, so it might have unexpected behaviour
+
+---
+The icons for the extension were obtained
+[here](http://iconizer.net/en/search/No-license-filtering/0-128/1/jupiter)
+
+If you're the owner and don't want them to be used here, let me know.

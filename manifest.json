@@ -1,0 +1,23 @@
+{
+  "name": "Jupyter Notebook Output Reconnection",
+  "description": "Jupyter Notebook Output Reconnection",
+  "version": "0.0.1",
+  "background": {"scripts": ["background.js"]},
+  "content_scripts": [{
+    "matches": ["*://*/*.ipynb"],
+    "js": ["content_script.js"]
+  }],
+
+  "browser_action": {
+   "default_icon": {"16": "icon_16x16.png"},
+   "default_title":"Jupyter Notebook Output Recovery" 
+  },
+
+  "icons": { "128": "icon_128x128.png" },
+  "permissions": [
+    "activeTab","tabs", "*://*/*.ipynb", "*://*/api/kernels/*"
+  ],
+
+  "web_accessible_resources": ["script.js"],
+  "manifest_version": 2
+}
